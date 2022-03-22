@@ -1,6 +1,10 @@
 console.log('hello!');
 
 /*
+  Works
+  * video to video via captureStream()
+  * target video will fail on page refresh if user has not interacted with DOM ( but not on view panel in stackblitz refresh strangely )
+
  *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
  *
  *  Use of this source code is governed by a BSD-style license
