@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <video
+      id="leftVideo"
+      autoplay
+      playsinline
+      controls
+      loop
+      height="240"
+      width="360"
+      crossorigin="anonymous"
+    >
+      <source
+        src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        type="video/mp4"
+      />
+      <p>This browser does not support the video element.</p>
+    </video>
+    <br /><br />
+
+    <video
+      id="rightVideo"
+      crossorigin="anonymous"
+      playsinline
+      autoplay
+      controls
+    ></video>
+
+    <script>
+      // var video, canvas, context;
+      // video = document.getElementsByTagName('video')[0];
+      // canvas = document.getElementsByTagName('canvas')[0];
+      // context = canvas.getContext('2d');
+      // video.addEventListener('play', paintFrame, false);
+      // var x = 0,
+      //   xpos = 10;
+      // var y = 0,
+      //   ypos = 10;
+      // function paintFrame() {
+      //   in_w = 720;
+      //   in_h = 480;
+      //   w = 360;
+      //   h = 240;
+      //   context.drawImage(video, 0, 0, in_w, in_h, 0, 0, w, h);
+      //   frame = context.getImageData(0, 0, w, h);
+      //   context.clearRect(0, 0, w, h); // create 4x4 tiling
+
+      //   tiles = 4;
+      //   gap = 5;
+      //   for (x = 0; x < tiles; x++) {
+      //     for (y = 0; y < tiles; y++) {
+      //       context.putImageData(
+      //         frame,
+      //         x * gap,
+      //         y * gap,
+      //         (x * w) / tiles,
+      //         (y * h) / tiles,
+      //         w / tiles,
+      //         h / tiles
+      //       );
+      //     }
+      //   }
+      //   if (video.paused || video.ended) {
+      //     return;
+      //   }
+      //   requestAnimationFrame(paintFrame);
+      // }
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
